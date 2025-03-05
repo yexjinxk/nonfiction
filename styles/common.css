@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* reset style */
+body, div, fieldset, h1, h2, h3, h4, ul, ol, li, dl, dt, dd, p{
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather", "Noto Sans KR", "돋움", dotum, sans-serif;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+/* h1, h2, h3, h4, strong{
+    font-weight: normal;
+} */
+
+address, em{
+    font-style: normal;
+}
+
+fieldset{
+    border: 0 none;
+}
+
+a{
+    text-decoration: none;
+    color: #666; /*  */
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #666; /*  */
+}
+
+.inb-nav_pc a{color: #afafaf;}
+
+button{
+    cursor: pointer;
+}
+
+/* base style */
+body{
+    font-size: 14px; 
+}
+
+h1, h2, h3, h4{
+    font-size: 100%;
+}
+
+.hidden{/* 읽기는 가능하고 안보이게 처리 */
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        text-indent: -9999px;
+}
+
+h1{font-size: 24px;font-weight: 400;}
+h2{font-size: 18px;}
+
+section{margin: 0 10px;}
+
+#container{width: 100%;}
+.price{font-family: Noto Sans KR;font-size: 16px;}
+.swiper_cont{/* float: left; */margin-bottom: 110px;}
+.swiper_cont .box> li{margin-right: 10px;flex: 0 0 55%;}
+.swiper_cont .box.small> li{margin-right: 10px;flex: 0 0 40%;}
+.swiper_cont .box .image_area img{width: 100%;}
+.swiper_cont .box .image_area{position: relative;}
+.swiper_cont .box .image_area .best{display: flex; position: absolute; background: #535353;width: 80px;bottom: 4.5px;height: 25px;align-items: center;justify-content: center;color: #fff;border-radius: 0 10px 0 0; font-weight: 300;font-family: Noto Sans KR; font-size: 12px;}
+.swiper_cont .box{display: flex;overflow-x: scroll;padding-bottom: 25px;}
+/* scroll bar */
+.box::-webkit-scrollbar {
+background-color: #e0e0e0;
+height: 8px;
+}
+
+.box::-webkit-scrollbar-thumb {
+background-color: #808080;
+border-radius: 10px;
+background-clip: padding-box;
+border: 2px solid transparent;
+outline: none;
+} 
+
+.info_wrap{margin-top: 10px;}
+.info_wrap p{font-weight: bold;text-overflow: ellipsis;-webkit-line-clamp: 1;display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;}
+.info_wrap .product_note{display: flex;margin: 5px 0px;}
+.info_wrap .product_tit{display: flex;align-items: center;}
+.info_wrap .product_bottom{display: flex;align-items: center; justify-content: space-between;margin-top: 15px;}
+.box.small .info_wrap .product_bottom{margin-top: 10px;}
+.info_wrap .product_bottom .prd_btn{display: flex;align-items: center;margin-right: 10px;}
+.info_wrap .product_bottom .prd_btn li{margin: 3px;}
+.info_wrap .product_tit .volume{margin-left: 15px;color: #868686;font-size: 12px;font-family: Noto Sans KR;font-weight: 500;}
+.info_wrap .product_note li{color: #868686;font-size: 12px;position: relative;padding: 0 4px;}
+.info_wrap .product_note li:first-child{padding-left: 0px;}
+.info_wrap .product_note li::after{width: 1px;height: 8px;position: absolute;background: #868686;content: '';top: 30%;right: 0;opacity: 30%;}
+.info_wrap .product_note li:last-child::after{display: none;}
+
+.depth2_pc > a{font-size: 16px;}
+.depth2_pc > li{font-size: 16px;}
+
+#footer{padding: 20px 10px;}
+#footer .ft_company .ft_agree>p:first-child:after{width: 1px;height: 8px;position: absolute;background: #ffffff;content: '';padding-left: 0;margin: 4px 5px;opacity: 30%;}
+#footer .ft_company .ft_info>p::after{width: 1px;height: 8px;position: absolute;background: #ffffff;content: '';padding-left: 0;margin: 7px 5px;opacity: 30%;}
+@media(min-width:1440px) {
+    .info_wrap .product_note li{font-size: 14px;}
+    .price{font-size: 18px;}
+    .sec_new .contwrap > .sectit p{font-size: 16px;}
+    .sec_best .contwrap > .sectit p{font-size: 16px;}
+    .info_wrap .product_bottom .prd_btn li a img{width: 20px;height: 20px;}
+    .info_wrap .product_bottom{margin-top: 20px;}
+}
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+    .info_wrap .product_note li{font-size: 14px;}
+    .price{font-size: 18px;}
+    .sec_new .contwrap > .sectit p{font-size: 16px;}
+    .sec_best .contwrap > .sectit p{font-size: 16px;}
+    .info_wrap .product_bottom .prd_btn li a img{width: 16px;height: 16px;}
+    .info_wrap .product_bottom{margin-top: 20px;}
+}
